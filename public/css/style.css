@@ -41,23 +41,40 @@ main {
 
 .producto-precio {
   font-size: 18px;
+  flex-grow: 0.3;
 }
 .producto-descuento {
   color: #39b54a;
   font-size: 16px;
+  flex-grow: 0.7;
 }
 .producto-descripciones {
   margin-top: 20px;
   font-size: 16px;
 }
 
+.precio-desc{
+  display: flex;
+  flex-direction: row;
+  
+}
 /* Imagenes size*/
 
 #logo-img {
-  width: 162px;
+  width: 50vw;
+}
+.logo-icon{
+  width: 50vw;
+  flex-wrap: wrap;
 }
 #img-banner {
   width: 100vw;
+}
+.logomedida50{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
 }
 
 /*Iconos*/
@@ -91,14 +108,19 @@ footer i {
 
 /*iconos del main*/
 
-.circunferencia-icono {
+.product-desc-box > .product-delivery-icon {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  position: relative;
-  background-color: #ffffff;
+  position: absolute;
+  background-color: #fff;
   color: #39b54a;
   border: 1px solid #39b54a;
+  right: 60px;
+  top: auto;
 }
 
 .main i {
@@ -117,14 +139,14 @@ main section div {
 }
 
 /*Queri medias*/
-@media (max-width: 361px) {
+
   .producto-descripciones {
     display: none;
   }
   header nav {
     display: none;
   }
-}
+
 
 @media (min-width: 361px) {
   .Sombreado-articulo {
@@ -135,11 +157,29 @@ main section div {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .Sombreado-articulo {
     box-shadow: 0 0 10px rgb(100, 100, 100);
   }
   div#boton button {
     display: none;
+  }
+  .dosarticulos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .product-desc-box > .product-delivery-icon{
+    right: unset;
+  }
+  main{
+    margin-right: unset;
+  }
+}
+
+@media(min-width:1024px){
+  .cuatrodiv{
+    display: flex;
+    flex-direction: row;
   }
 }
