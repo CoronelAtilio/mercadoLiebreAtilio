@@ -80,7 +80,6 @@ main{
 }
 .precio-descuento{
     display: flex;
-    flex-direction: row;
     width: 100%;
 
 }
@@ -143,6 +142,21 @@ main{
 header nav{
     display: none;
 }
+
+/*REGISTRO*/
+.main-registro{
+    background-color: #ebebeb;
+    width: 75%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+form div{
+    display: flex;
+    flex-direction: column;
+}
+/*FIN REGISTRO*/
 /*TABLET*/
 @media(min-width: 361px){
     .descripciones{
